@@ -1,0 +1,17 @@
+CREATE TABLE Users(
+	[User_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](30) NOT NULL,
+	[Username] [varchar](30) NOT NULL,
+	[MobileNumber] [varchar](20) NULL,
+	[VehicleType] [varchar](10) NULL,
+	[LicenseNumber] [varchar](20) NULL,
+	[ReferredBy] [varchar](20) NULL,
+	[CashbackEarned] [int] NULL,
+	[IsRegistered] [bit] NULL DEFAULT ((0)),
+	[Latitude] [decimal](20, 20) NULL,
+	[Longitude] [decimal](20, 20) NULL,
+	[ReferralCode] [varchar](10) NULL,
+	[Password] [binary](64) NULL,
+	[Salt] [uniqueidentifier] NULL,
+	[CashbackPaid] [int] NULL,
+);
