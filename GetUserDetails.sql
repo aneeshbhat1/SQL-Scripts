@@ -1,6 +1,6 @@
-ALTER PROCEDURE GetUserDetails(@UserName VARCHAR(50))
+ALTER PROCEDURE GetUserDetails(@MobileNumber VARCHAR(50))
 AS
 BEGIN
-SELECT * FROM USERS(nolock) WHERE Username = @UserName
+SELECT * FROM USERS(nolock) WHERE MobileNumber = @MobileNumber
 --AND Password = @Password
 END
